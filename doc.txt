@@ -1,0 +1,40 @@
+python -m venv venv
+venv/Scripts/activate
+
+Set-ExecutionPolicy -Scope CurrentUser
+AllSigned
+
+pip install django mysqlclient djangorestframework
+
+pip freeze
+
+django-admin startproject backend .
+
+python manage.py startapp core
+
+python manage.py runserver
+
+WORKBENCH - ADMINISTRATION - USERS AND P - ROOT - schema privileges - add entry - selected schema (db u created)
+check every box, apply
+
+backend - setting.py > 
+installed apps 
+ 'core',
+ 'rest_framework',
+
+SETTING.PY > DATABASES:
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'test',
+        'USER': 'root',
+        'PASSWORD':'12345678',
+        'HOST':'localhost',
+        'PORT':'3306',
+
+CORE > models.py
+
+- migration
+python manage.py makemigrations
+python manage.py migrate
