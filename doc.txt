@@ -40,3 +40,9 @@ python manage.py makemigrations
 python manage.py migrate
 
 core > serializers.py
+
+http://127.0.0.1:8000/api/produtos/
+
+CREATE DATABASE test;
+use test;
+SELECT * FROM core_produto;
