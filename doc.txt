@@ -14,7 +14,7 @@ python manage.py startapp core
 
 python manage.py runserver
 
-WORKBENCH - ADMINISTRATION - USERS AND P - ROOT - schema privileges - add entry - selected schema (db u created)
+WORKBENCH - create db - ADMINISTRATION - USERS AND P - ROOT - schema privileges - add entry - selected schema (db u created)
 check every box, apply
 
 backend - setting.py > 
@@ -38,3 +38,5 @@ CORE > models.py
 - migration
 python manage.py makemigrations
 python manage.py migrate
+
+core > serializers.py
